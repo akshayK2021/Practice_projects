@@ -10,7 +10,6 @@ let url_contain=new Map();
 function isValid(url){
   try{
     const parse=new urlparse(url);
-
     return parse.host!=='' && parse.protocol!=='';
 
   }catch(err){
