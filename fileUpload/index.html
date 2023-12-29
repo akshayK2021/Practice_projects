@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/index.js"></script>
+  <style>
+    /* Works for Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Works for Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  </style>
+</head>
+<body>
+  <form id="form">
+
+    <label for="first">Enter Your Full Name: </label>
+    <input type="text" placeholder="Enter your Full Name" name="first">
+    <br>
+    <label for="cgpa">Enter Your CGPA: </label>
+    <input type="number"  placeholder="Enter out of 10">
+    <br>
+    <input id="files" type="file">
+    <br>
+    <button onclick="upload(event)" id="submiting" type="submit">Submit</button>
+    
+  </form>
+  <br>
+ 
+
+ 
+  
+  
+</body>
+</html>
